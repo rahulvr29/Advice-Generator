@@ -16,7 +16,14 @@ html {
 
 body {
   font-family: 'Manrope', sans-serif;
-  background-color: #fff;
+  background-color: var(--Dark-Blue);
+  padding: 1.25rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 0.1px);
 }
 
 /* global css */
@@ -50,6 +57,52 @@ li {
   --Dark-Blue: hsl(218, 23%, 16%);
 }
 
+.card-container{
+  background-color: var(--Dark-Grayish-Blue) ;
+  padding: 1.25rem 1.25rem 3rem;
+  border-radius: 1.25rem;
+  position: relative;
+}
+.card-container h1{
+  color: var(--Neon-Green);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+  letter-spacing: 0.4rem;
+}
+.card-container p{
+  font-size: 28px;
+  color: var(--Light-Cyan);
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+.dice-img button{
+  background-color: var(--Neon-Green);
+  padding: 1.25rem;
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -2rem;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+}
+.dice-img button:hover{
+  background-color: hsl(150, 92%, 54%);
+  box-shadow: 0px 0px 16px var(--Neon-Green);
+}
+.footer-container{
+  margin-top: 75px;
+  font-size: 17px;
+  color: var(--Grayish-Blue);
+}
+span{
+  color: var(--Light-Cyan);
+}
+
+
+
 .mobile-img{
   display: block;
 }
@@ -74,6 +127,10 @@ li {
   .desktop-img{
     display: block;
   }
+  .footer-container{
+    margin-top: 150px;
+  }
+  
 }
 
 /* Extra large devices (large desktops) */
