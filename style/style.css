@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
 
 *,
 *::after,
@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Manrope', sans-serif;
   background-color: #fff;
 }
 
@@ -42,19 +42,19 @@ li {
   padding-right: 1rem;
 }
 
-.btn {
-  display: inline-block;
-  border-radius: 8px;
-  padding: 0.5rem 1.5rem;
-  margin-top: 0.5rem;
-  text-transform: capitalize;
-  font-size: 1.2rem;
-  font-weight: 500;
-  cursor: pointer;
-  /* customize */
-  background-color: #1c2042;
-  color: white;
-  border: 2px solid #1c2042;
+:root{
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+}
+
+.mobile-img{
+  display: block;
+}
+.desktop-img{
+  display: none;
 }
 
 @media screen and (min-width: 576px) {
@@ -68,6 +68,12 @@ li {
 /* Large devices (desktops) */
 
 @media (min-width: 991px) {
+  .mobile-img{
+    display: none;
+  }
+  .desktop-img{
+    display: block;
+  }
 }
 
 /* Extra large devices (large desktops) */
