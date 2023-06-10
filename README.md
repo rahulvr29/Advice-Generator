@@ -38,8 +38,8 @@ As mentioned above, there are many ways to host your project for free. Our recom
 
 ## Links 
 
-- Solution URL: [Click here]()
-- Live Site URL: [Click here]()
+- Solution URL: [Click here](https://github.com/rahulvr29/Advice-Generator)
+- Live Site URL: [Click here](https://lovely-meringue-bab678.netlify.app/)
 
 
 
